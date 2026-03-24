@@ -1,1 +1,54 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f9ff;
+  color: #222;
+}
 
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: #1a73e8;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1558b0;
+}
+
+#episodeList {
+  text-align: left;
+}
+
+.episode {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
