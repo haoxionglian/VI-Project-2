@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Data Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 
+<body>
+
+  <div class="container">
+
+    <h1>📊 Anime Data Dashboard</h1>
+
+    <!-- 搜索 -->
+    <div class="card search-card">
+      <input type="text" id="animeInput" placeholder="Search anime...">
+      <button onclick="searchAnime()">Search</button>
+    </div>
+
+    <!-- 控制面板 -->
+    <div class="card controls">
+      <button onclick="toggleChartType()">Switch Chart</button>
+      <button onclick="filterHighScore()">High Score Only</button>
+      <button onclick="resetData()">Reset</button>
+    </div>
+
+    <p id="status"></p>
+
+    <!-- 图表 -->
+    <div class="card">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <!-- 列表 -->
+    <div class="card" id="episodeList"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
